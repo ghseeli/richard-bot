@@ -1,4 +1,5 @@
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"b
+#!/bin/bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Setup RichardBot's ssh key
 if [ ! -f ~/.ssh/id_rsa.richard-bot ]; then
@@ -27,6 +28,6 @@ if [ ! -d $DIR/../richard-bot-grad-school-notes ]; then
 	git config user.email "ghseeli+richardbot@gmail.com"
 fi
 
-    
+
 
 
