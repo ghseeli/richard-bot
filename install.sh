@@ -1,4 +1,4 @@
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"b
 
 # Setup RichardBot's ssh key
 if [ ! -f ~/.ssh/id_rsa.richard-bot ]; then
@@ -24,6 +24,7 @@ if [ ! -d $DIR/../richard-bot-grad-school-notes ]; then
 	git remote add richard-bot git@github-as-richard-bot:RichardBot/grad-school-notes.git
 	git pull richard-bot master
 	git config user.name "Richard Bot"
+	git config user.email "ghseeli+richardbot@gmail.com"
 fi
 
     
