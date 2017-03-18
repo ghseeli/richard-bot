@@ -13,7 +13,7 @@ if [ ! -f ~/.ssh/id_rsa.richard-bot ]; then
 	ssh-keygen -y -f ~/.ssh/id_rsa.richard-bot > ~/.ssh/id_rsa.richard-bot.pub
 	cat $DIR/ssh-config >> ~/.ssh/config
     else
-	echo "Please make sure you get a copy of RichardBot's key and add it to this directory named as id_rsa.richard-bot"
+	printf "Please make sure you get a copy of RichardBot's key and add it to this directory named as id_rsa.richard-bot"
 	exit 1
     fi
 fi
